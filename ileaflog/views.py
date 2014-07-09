@@ -9,4 +9,5 @@ def index(request):
 
 def oauth(request):
     print "Code = " + request.GET.__getitem__('code')
+    print request
     return render_to_response('ileaflog/oauth.html')
